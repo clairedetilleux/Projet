@@ -10,4 +10,19 @@
 
 @interface LectureModeViewController : UIViewController
 
+
+
+
+@property (weak, nonatomic) IBOutlet UILabel *temps;
+// Texte à afficher dans le label temps
+@property(nonatomic, copy) NSString *tps;
+
+- (IBAction)rewButton:(id)sender;
+- (IBAction)stopButton:(id)sender;
+- (IBAction)playButton:(id)sender;
+- (IBAction)pauseButton:(id)sender;
+- (IBAction)ffButton:(id)sender;
+
+- (NSDictionary *)userInfo;
+
 @end
