@@ -8,14 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LectureModeViewController : UIViewController
+@interface LectureModeViewController : UIViewController{
+    UILabel *label;
+    NSTimer *pollingTimer;
+    NSDateFormatter *dateFormatter;
+}
 
 
 
 
-@property (weak, nonatomic) IBOutlet UILabel *temps;
-// Texte à afficher dans le label temps
-@property(nonatomic, copy) NSString *tps;
+
+@property (nonatomic, retain) NSDateFormatter *dateFormatter;
+
+
+
+@property (nonatomic, retain) IBOutlet UILabel *label;
+
+
 
 - (IBAction)rewButton:(id)sender;
 - (IBAction)stopButton:(id)sender;

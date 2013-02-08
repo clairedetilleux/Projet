@@ -9,11 +9,14 @@
 #import "LectureModeViewController.h"
 
 @interface LectureModeViewController ()
-
 @end
 
 @implementation LectureModeViewController
-@synthesize temps;
+@synthesize label;
+@synthesize dateFormatter;
+
+
+
 
 
 - (void)viewDidLoad
@@ -21,9 +24,13 @@
     [super viewDidLoad];
 }
 
+
+
+
+
 - (void)viewDidUnload
 {
-    [self setTemps:nil];
+    [self setLabel:nil];
     [super viewDidUnload];
 }
 
@@ -33,51 +40,62 @@
     return UIDeviceOrientationIsLandscape(interfaceOrientation);
 }
 
-/***************** Gestion du timer *****************/
-
-- (IBAction)rewButton:(id)sender {
-} // rexButton()
-
-- (IBAction)stopButton:(id)sender {
-} // stopButton()
-
-
+#pragma marks - Timer Methods
 
 - (NSDictionary *)userInfo {
     return @{ @"StartDate" : [NSDate date] };
 } // userInfo()
+
 - (void)targetMethod:(NSTimer*)theTimer {
     NSDate *startDate = [[theTimer userInfo] objectForKey:@"StartDate"];
     NSLog(@"Timer started on %@", startDate);
+    
+    
+    NSDate *today = [[NSDate alloc] init];
+    NSString *currentTime = [self.dateFormatter stringFromDate: today];
+    self.label.text = currentTime;
 } // targetMethod()
 
 
-/* Mise en route du timer */
-- (IBAction)playButton:(id)sender {
-    [NSTimer scheduledTimerWithTimeInterval:1.0
-                                        target:self
-                                      selector:@selector(targetMethod:)
-                                      userInfo:[self userInfo]
-                                       repeats:NO];
-     
+# pragma marks - Timer Manager Methods
 
-     
-     // Afficher le temps dans le label sur la view
-     //this.text = [NSString stringWithFormat:@"%@", _tps];
+/***************** Gestion du timer *****************/
+
+- (IBAction)rewButton:(id)sender {
+} // rewButton()
+
+- (IBAction)stopButton:(id)sender {
+
+} // stopButton()
+
+- (IBAction)playButton:(id)sender {
+    
+    NSDate *today = [[NSDate alloc] init];
+    dateFormatter = [[NSDateFormatter alloc] init];
+    [self.dateFormatter setDateFormat:@"HH : mm : ss.S"];
+    
+    NSString *currentTime = [self.dateFormatter stringFromDate: today];
+    self.label.text = currentTime;
+    
+    
+    pollingTimer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                    target:self
+                                                  selector:@selector(targetMethod:)
+                                                  userInfo:[self userInfo]
+                                                   repeats:YES];
 } // playButton()
 
 
-
-
-    
-
-
-
 - (IBAction)pauseButton:(id)sender {
+    [pollingTimer invalidate];
+    pollingTimer = nil;
 } // pauseButton()
 
 - (IBAction)ffButton:(id)sender {
 } // ffButton()
+
+
+
 
 
 @end
