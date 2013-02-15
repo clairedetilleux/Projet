@@ -11,7 +11,7 @@
 @interface LectureModeViewController : UIViewController{
     UILabel *label;
     NSTimer *pollingTimer;
-    NSDateFormatter *dateFormatter;
+    NSDate *timer;    
 }
 
 
@@ -20,11 +20,16 @@
 
 @property (nonatomic, retain) NSDateFormatter *dateFormatter;
 
-
+@property (strong, nonatomic) IBOutlet UILabel *stopwatchLabel;
 
 @property (nonatomic, retain) IBOutlet UILabel *label;
 
 
+/************** Variables debug ************/
+@property (weak, nonatomic) IBOutlet UILabel *tenSecLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *fiveSecLabel;
+/*******************************************/
 
 - (IBAction)rewButton:(id)sender;
 - (IBAction)stopButton:(id)sender;
@@ -33,5 +38,7 @@
 - (IBAction)ffButton:(id)sender;
 
 - (NSDictionary *)userInfo;
+
+
 
 @end

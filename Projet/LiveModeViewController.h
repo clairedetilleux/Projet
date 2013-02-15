@@ -10,4 +10,11 @@
 
 @interface LiveModeViewController : UIViewController
 
+- (IBAction)playButton:(id)sender;
+- (IBAction)pauseButton:(id)sender;
+- (IBAction)recButton:(id)sender;
+- (IBAction)rewButton:(id)sender;
+- (IBAction)ffButton:(id)sender;
+
+
 @end
