@@ -10,11 +10,26 @@
 
 @interface LiveModeViewController : UIViewController
 
+
+
+@property (nonatomic, retain) NSDateFormatter *dateFormatter;
+@property (nonatomic, retain) NSDateFormatter *datePisteFormatter;
+
+@property (strong, nonatomic) IBOutlet UILabel *stopwatchLabel;
+
+
 - (IBAction)playButton:(id)sender;
 - (IBAction)pauseButton:(id)sender;
 - (IBAction)recButton:(id)sender;
 - (IBAction)rewButton:(id)sender;
 - (IBAction)ffButton:(id)sender;
+
+- (IBAction)pisteButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *pisteButton1;
+
+@property (weak, nonatomic) IBOutlet UIButton *pisteButton2;
+
 
 
 @end

@@ -14,11 +14,7 @@
 @property (strong, nonatomic) NSTimer *stopWatchTimer;      // Store the timer that fires after a certain time
 @property (strong, nonatomic) NSDate *startDate;            // Stores the date of the click on the start button
 
-@property (strong, nonatomic) NSDate *pauseDate;            // Stores the date of the click on the pause button
-
 @property (strong, nonatomic) NSDate *ffDate;               // Stores the date of the click on the ff button
-
-
 @property (strong, nonatomic) NSDate *currentDate;          // Date courante
 
 
@@ -32,15 +28,10 @@
 @synthesize stopwatchLabel;
 
 
-
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 }
-
-
 
 
 - (void)viewDidUnload

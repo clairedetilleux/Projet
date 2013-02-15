@@ -14,7 +14,6 @@
 		9B81873516BFEF6000D92EF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B81873416BFEF6000D92EF6 /* main.m */; };
 		9B81873916BFEF6000D92EF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B81873816BFEF6000D92EF6 /* AppDelegate.m */; };
 		9B81873C16BFEF6000D92EF6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B81873A16BFEF6000D92EF6 /* MainStoryboard_iPhone.storyboard */; };
-		9B81873F16BFEF6000D92EF6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B81873D16BFEF6000D92EF6 /* MainStoryboard_iPad.storyboard */; };
 		9B81874216BFEF6000D92EF6 /* LectureModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B81874116BFEF6000D92EF6 /* LectureModeViewController.m */; };
 		9B81874A16BFEF6000D92EF6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81874916BFEF6000D92EF6 /* SenTestingKit.framework */; };
 		9B81874B16BFEF6000D92EF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81872816BFEF6000D92EF6 /* UIKit.framework */; };
@@ -23,6 +22,7 @@
 		9B81875716BFEF6000D92EF6 /* ProjetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B81875616BFEF6000D92EF6 /* ProjetTests.m */; };
 		9B81876316BFFB8500D92EF6 /* LiveModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B81876116BFFB8500D92EF6 /* LiveModeViewController.m */; };
 		9BBAF50716CE3EDE00A22ABD /* Partition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBAF50616CE3EDE00A22ABD /* Partition.m */; };
+		9BBAF51316CE642C00A22ABD /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBAF51216CE642C00A22ABD /* MainStoryboard_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		9B81873716BFEF6000D92EF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B81873816BFEF6000D92EF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9B81873B16BFEF6000D92EF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		9B81873E16BFEF6000D92EF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		9B81874016BFEF6000D92EF6 /* LectureModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LectureModeViewController.h; sourceTree = "<group>"; };
 		9B81874116BFEF6000D92EF6 /* LectureModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LectureModeViewController.m; sourceTree = "<group>"; };
 		9B81874816BFEF6000D92EF6 /* ProjetTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjetTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +59,7 @@
 		9B81876116BFFB8500D92EF6 /* LiveModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveModeViewController.m; sourceTree = "<group>"; };
 		9BBAF50516CE3EDE00A22ABD /* Partition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Partition.h; sourceTree = "<group>"; };
 		9BBAF50616CE3EDE00A22ABD /* Partition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Partition.m; sourceTree = "<group>"; };
+		9BBAF51216CE642C00A22ABD /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +121,7 @@
 			children = (
 				9B81873716BFEF6000D92EF6 /* AppDelegate.h */,
 				9B81873816BFEF6000D92EF6 /* AppDelegate.m */,
-				9B81873A16BFEF6000D92EF6 /* MainStoryboard_iPhone.storyboard */,
-				9B81873D16BFEF6000D92EF6 /* MainStoryboard_iPad.storyboard */,
-				9B81874016BFEF6000D92EF6 /* LectureModeViewController.h */,
-				9B81874116BFEF6000D92EF6 /* LectureModeViewController.m */,
-				9B81876016BFFB8500D92EF6 /* LiveModeViewController.h */,
-				9B81876116BFFB8500D92EF6 /* LiveModeViewController.m */,
+				9BBAF50916CE45B200A22ABD /* Controller */,
 				9BBAF50516CE3EDE00A22ABD /* Partition.h */,
 				9BBAF50616CE3EDE00A22ABD /* Partition.m */,
 				9B81872F16BFEF6000D92EF6 /* Supporting Files */,
@@ -162,6 +157,19 @@
 				9B81875216BFEF6000D92EF6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BBAF50916CE45B200A22ABD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9B81873A16BFEF6000D92EF6 /* MainStoryboard_iPhone.storyboard */,
+				9BBAF51216CE642C00A22ABD /* MainStoryboard_iPad.storyboard */,
+				9B81874016BFEF6000D92EF6 /* LectureModeViewController.h */,
+				9B81874116BFEF6000D92EF6 /* LectureModeViewController.m */,
+				9B81876016BFFB8500D92EF6 /* LiveModeViewController.h */,
+				9B81876116BFFB8500D92EF6 /* LiveModeViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +245,7 @@
 			files = (
 				9B81873316BFEF6000D92EF6 /* InfoPlist.strings in Resources */,
 				9B81873C16BFEF6000D92EF6 /* MainStoryboard_iPhone.storyboard in Resources */,
-				9B81873F16BFEF6000D92EF6 /* MainStoryboard_iPad.storyboard in Resources */,
+				9BBAF51316CE642C00A22ABD /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,14 +321,6 @@
 				9B81873B16BFEF6000D92EF6 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		9B81873D16BFEF6000D92EF6 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B81873E16BFEF6000D92EF6 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		9B81875216BFEF6000D92EF6 /* InfoPlist.strings */ = {
