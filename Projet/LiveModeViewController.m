@@ -7,6 +7,7 @@
 //
 
 #import "LiveModeViewController.h"
+#import "Piste.h"
 
 @interface LiveModeViewController ()
 
@@ -18,25 +19,18 @@
 @property (strong, nonatomic) NSDate *piste1;               // Stores the date of the click on the piste1 button
 
 
-
-
-
 @end
 
 @implementation LiveModeViewController
+@synthesize texte = _texte;
 @synthesize pisteButton1 = _pisteButton1;
 @synthesize pisteButton2 = _pisteButton2;
+@synthesize debugLabel = _debugLabel;
 @synthesize stopwatchLabel;
 
 
-/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}*/
+/************ isButtonClicked ************/
+int playButtonClicked;
 
 - (void)viewDidLoad
 {
@@ -48,6 +42,8 @@
     [self setStopwatchLabel:nil];
     [self setPisteButton1:nil];
     [self setPisteButton2:nil];
+    [self setDebugLabel:nil];
+    [self setTexte:nil];
     [super viewDidUnload];
 }
 
@@ -76,13 +72,6 @@
     NSString *timeStringDebugTimerDate = [dateFormatter stringFromDate:timerDate];
     NSLog(timeStringDebugTimerDate);
     
-    
-    if([timeStringDebugTimerDate isEqualToString:@"00:00:05.0"]){
-        //self.fiveSecLabel.text = @"hourra !!!!!";
-    } else if([timeStringDebugTimerDate isEqualToString:@"00:00:10.0"]){
-        //self.tenSecLabel.text = @"Youpiiiii !!!";
-    }
-    
     // Format the elapsed time and set it to the label
     NSString *timeString = [dateFormatter stringFromDate:timerDate];
     self.stopwatchLabel.text = timeString;
@@ -91,9 +80,9 @@
 
 # pragma marks - Timer Manager Methods
 
-/***************** Gestion du timer *****************/
-
 - (IBAction)playButton:(id)sender {
+    playButtonClicked = 1;
+    
     self.startDate = [NSDate date];
     
     // Create the stop watch timer that fires every 100 ms
@@ -109,9 +98,6 @@
     self.stopWatchTimer = nil;
     [self updateTimer];
 } // pauseButton()
-
-- (IBAction)recButton:(id)sender {
-} // recButton()
 
 - (IBAction)rewButton:(id)sender {
 } // rewButton()
@@ -139,25 +125,65 @@
     NSString *time = [datePisteFormatter stringFromDate:timerPiste1Date];
    
     // Création d'un tableau pour recueillir les évènements
-    NSMutableArray * sequence = [[NSArray alloc] init];
+    sequence = [[NSMutableArray alloc] init];
     
+    /* Le if prend la position du bouton sur la fenêtre
+     * Quelque soit le titre de celui ci
+     * C'est le titre du bouton physique qui est enregistré dans 
+     * la séquence
+     */
     if(sender == _pisteButton1){
-        NSLog(@"Bouton 1 appuyé !");
-        NSLog(time);
-        NSString * piste =  @"piste1";
-        // Création d'un tableau 1x2 contenant cet évènement
-        NSArray * tabPiste1 = [[NSArray alloc] init];
-        tabPiste1 = [NSArray arrayWithObjects: time, piste, nil];
-        sequence = [NSArray arrayWithArray:tabPiste1];
+        NSLog(_pisteButton1.currentTitle);
+        // Envoie de la requête qui lance le jouet
+        if(playButtonClicked == 1){
+            NSLog(@"Bouton 1 appuyé !");
+            // Le titre qui est enregistré est celui du bouton
+            NSString * piste =  _pisteButton1.currentTitle;
+            
+            // Création d'un tableau 1x2 contenant cet évènement
+            NSArray * tabPiste1 = [[NSArray alloc] init];
+            tabPiste1 = [NSArray arrayWithObjects: time, piste, nil];
+            sequence = [NSArray arrayWithArray:tabPiste1];
+        }
     } else if (sender == _pisteButton2){
-        NSLog(@"Bouton 2 appuyé !");
-        NSLog(time);
-        NSString * piste =  @"piste2";
-        // Création d'un tableau 1x2 contenant cet évènement
-        NSArray * tabPiste2 = [[NSArray alloc] init];
-        tabPiste2 = [NSArray arrayWithObjects: time, piste, nil];
-        sequence = [NSArray arrayWithArray:tabPiste2];
+        if(playButtonClicked == 1){
+            NSLog(@"Bouton 2 appuyé !");
+            NSString * piste =  _pisteButton2.currentTitle;
+            // Création d'un tableau 1x2 contenant cet évènement
+            NSArray * tabPiste2 = [[NSArray alloc] init];
+            tabPiste2 = [NSArray arrayWithObjects: time, piste, nil];
+            sequence = [NSArray arrayWithArray:tabPiste2];
+        }
     }
 } // pisteButton()
+
+
+
+
+- (IBAction)test:(UIPanGestureRecognizer *)recognizer {
+    CGPoint translation = [recognizer translationInView:self.view];
+    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,
+                                         recognizer.view.center.y + translation.y);
+    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+}
+
+- (IBAction)changeTitle:(UILongPressGestureRecognizer *) recognizer{
+    NSLog(@"long press");
+    
+    _texte = [[UITextField alloc] initWithFrame:CGRectMake(10, 80, 80, 25)];
+    [_texte setBorderStyle:UITextBorderStyleRoundedRect];
+    [_texte setReturnKeyType:UIReturnKeyDone];
+    _texte.delegate = self;
+    [self.view addSubview:_texte];
+}
+
+
+// Comment changer le titre du bouton courant ?
+-(BOOL)textFieldShouldReturn: (UITextField *)textField
+{
+    [textField resignFirstResponder];
+    [_pisteButton2 setTitle:textField.text forState:UIControlStateNormal];
+    return YES;
+}
 
 @end

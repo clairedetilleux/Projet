@@ -1,0 +1,12 @@
+{
+    "piste1": [
+        "titrePiste",
+        "clicDate",
+        "clicDuree"
+    ],
+    "piste2": [
+        "titrePiste",
+        "clicDate",
+        "clicDuree"
+    ]
+}

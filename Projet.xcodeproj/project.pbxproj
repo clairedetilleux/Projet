@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0B1B5D16D256D60026018A /* Piste.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B1B5C16D256D60026018A /* Piste.m */; };
+		9B0B1B5F16D25E730026018A /* sequence.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B1B5E16D25E730026018A /* sequence.json */; };
+		9B0B1B6616D25F930026018A /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B1B6316D25F930026018A /* DownloadManager.m */; };
+		9B0B1B6716D25F930026018A /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B1B6516D25F930026018A /* DownloadOperation.m */; };
 		9B81872916BFEF6000D92EF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81872816BFEF6000D92EF6 /* UIKit.framework */; };
 		9B81872B16BFEF6000D92EF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81872A16BFEF6000D92EF6 /* Foundation.framework */; };
 		9B81872D16BFEF6000D92EF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81872C16BFEF6000D92EF6 /* CoreGraphics.framework */; };
@@ -21,7 +25,6 @@
 		9B81875416BFEF6000D92EF6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B81875216BFEF6000D92EF6 /* InfoPlist.strings */; };
 		9B81875716BFEF6000D92EF6 /* ProjetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B81875616BFEF6000D92EF6 /* ProjetTests.m */; };
 		9B81876316BFFB8500D92EF6 /* LiveModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B81876116BFFB8500D92EF6 /* LiveModeViewController.m */; };
-		9BBAF50716CE3EDE00A22ABD /* Partition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BBAF50616CE3EDE00A22ABD /* Partition.m */; };
 		9BBAF51316CE642C00A22ABD /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBAF51216CE642C00A22ABD /* MainStoryboard_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B0B1B5B16D256D60026018A /* Piste.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piste.h; sourceTree = "<group>"; };
+		9B0B1B5C16D256D60026018A /* Piste.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piste.m; sourceTree = "<group>"; };
+		9B0B1B5E16D25E730026018A /* sequence.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sequence.json; sourceTree = "<group>"; };
+		9B0B1B6116D25F930026018A /* DownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadDelegate.h; sourceTree = "<group>"; };
+		9B0B1B6216D25F930026018A /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		9B0B1B6316D25F930026018A /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
+		9B0B1B6416D25F930026018A /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
+		9B0B1B6516D25F930026018A /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
 		9B81872416BFEF6000D92EF6 /* Projet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B81872816BFEF6000D92EF6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B81872A16BFEF6000D92EF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,8 +68,6 @@
 		9B81875616BFEF6000D92EF6 /* ProjetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjetTests.m; sourceTree = "<group>"; };
 		9B81876016BFFB8500D92EF6 /* LiveModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveModeViewController.h; sourceTree = "<group>"; };
 		9B81876116BFFB8500D92EF6 /* LiveModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveModeViewController.m; sourceTree = "<group>"; };
-		9BBAF50516CE3EDE00A22ABD /* Partition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Partition.h; sourceTree = "<group>"; };
-		9BBAF50616CE3EDE00A22ABD /* Partition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Partition.m; sourceTree = "<group>"; };
 		9BBAF51216CE642C00A22ABD /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +95,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B0B1B6016D25F730026018A /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				9B0B1B6116D25F930026018A /* DownloadDelegate.h */,
+				9B0B1B6216D25F930026018A /* DownloadManager.h */,
+				9B0B1B6316D25F930026018A /* DownloadManager.m */,
+				9B0B1B6416D25F930026018A /* DownloadOperation.h */,
+				9B0B1B6516D25F930026018A /* DownloadOperation.m */,
+			);
+			name = Download;
+			sourceTree = "<group>";
+		};
 		9B81871916BFEF6000D92EF6 = {
 			isa = PBXGroup;
 			children = (
@@ -122,8 +143,7 @@
 				9B81873716BFEF6000D92EF6 /* AppDelegate.h */,
 				9B81873816BFEF6000D92EF6 /* AppDelegate.m */,
 				9BBAF50916CE45B200A22ABD /* Controller */,
-				9BBAF50516CE3EDE00A22ABD /* Partition.h */,
-				9BBAF50616CE3EDE00A22ABD /* Partition.m */,
+				9B0B1B6016D25F730026018A /* Download */,
 				9B81872F16BFEF6000D92EF6 /* Supporting Files */,
 			);
 			path = Projet;
@@ -168,6 +188,9 @@
 				9B81874116BFEF6000D92EF6 /* LectureModeViewController.m */,
 				9B81876016BFFB8500D92EF6 /* LiveModeViewController.h */,
 				9B81876116BFFB8500D92EF6 /* LiveModeViewController.m */,
+				9B0B1B5E16D25E730026018A /* sequence.json */,
+				9B0B1B5B16D256D60026018A /* Piste.h */,
+				9B0B1B5C16D256D60026018A /* Piste.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -246,6 +269,7 @@
 				9B81873316BFEF6000D92EF6 /* InfoPlist.strings in Resources */,
 				9B81873C16BFEF6000D92EF6 /* MainStoryboard_iPhone.storyboard in Resources */,
 				9BBAF51316CE642C00A22ABD /* MainStoryboard_iPad.storyboard in Resources */,
+				9B0B1B5F16D25E730026018A /* sequence.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +316,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B81875716BFEF6000D92EF6 /* ProjetTests.m in Sources */,
-				9BBAF50716CE3EDE00A22ABD /* Partition.m in Sources */,
+				9B0B1B5D16D256D60026018A /* Piste.m in Sources */,
+				9B0B1B6616D25F930026018A /* DownloadManager.m in Sources */,
+				9B0B1B6716D25F930026018A /* DownloadOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

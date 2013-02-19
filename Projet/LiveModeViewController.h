@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DownloadManager.h"
 
-@interface LiveModeViewController : UIViewController
 
+@interface LiveModeViewController : UIViewController <UITextFieldDelegate>
+{
+    NSMutableArray *sequence;
+    UITextField *texte;
+}
 
 
 @property (nonatomic, retain) NSDateFormatter *dateFormatter;
@@ -20,7 +25,6 @@
 
 - (IBAction)playButton:(id)sender;
 - (IBAction)pauseButton:(id)sender;
-- (IBAction)recButton:(id)sender;
 - (IBAction)rewButton:(id)sender;
 - (IBAction)ffButton:(id)sender;
 
@@ -29,7 +33,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *pisteButton1;
 
 @property (weak, nonatomic) IBOutlet UIButton *pisteButton2;
+@property (strong, nonatomic) IBOutlet UILabel *debugLabel;
 
+- (IBAction)test:(UIPanGestureRecognizer *)recognizer;
+- (IBAction)changeTitle:(UILongPressGestureRecognizer *)recognizer;
 
+@property (nonatomic, retain) UITextField *texte;
 
 @end
