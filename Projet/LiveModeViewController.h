@@ -39,11 +39,15 @@
 @property (weak, nonatomic) IBOutlet UIButton *pisteButton2;
 @property (strong, nonatomic) IBOutlet UILabel *debugLabel;
 
-- (IBAction)test:(UIPanGestureRecognizer *)recognizer;
+- (IBAction)moveButton:(UIPanGestureRecognizer *)recognizer;
+
 - (IBAction)changeTitle:(UILongPressGestureRecognizer *)recognizer;
+
+- (IBAction)lock:(UITapGestureRecognizer *)recognizer;
 
 
 @property (nonatomic, retain) UITextField *changerTitreField;
+@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *doubleTap;
 
 
 

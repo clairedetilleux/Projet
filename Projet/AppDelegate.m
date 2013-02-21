@@ -20,11 +20,11 @@
 {
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
     
-    UIImage* barButton = [[UIImage imageNamed:@"ipad-button-grey.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
-    [[UIButton appearance] setBackgroundImage:barButton forState:UIControlStateNormal];
-
+    UIImage* liveModeButton = [[UIImage imageNamed:@"ipad-button-grey.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
+    [[UIButton appearance] setBackgroundImage:liveModeButton forState:UIControlStateNormal];
     
-    
+    UIImage* liveModePressedButton = [[UIImage imageNamed:@"ipad-button-grey-pressed.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
+    [[UIButton appearance] setBackgroundImage:liveModePressedButton forState:UIControlStateHighlighted];
 }
 
 

@@ -7,7 +7,7 @@
 //
 
 #import "LiveModeViewController.h"
-#import "Piste.h"
+
 
 @interface LiveModeViewController ()
 
@@ -22,6 +22,7 @@
 
 @implementation LiveModeViewController
 @synthesize changerTitreField = changerTitreField;
+@synthesize doubleTap = _doubleTap;
 @synthesize pisteButton1 = _pisteButton1;
 @synthesize pisteButton2 = _pisteButton2;
 @synthesize debugLabel = _debugLabel;
@@ -33,11 +34,11 @@
 int playButtonClicked;
 bool popup = NO;
 UIView *view;
+bool isLocked = NO;
 
 - (void)viewDidLoad
 {
-
-    
+    _doubleTap.numberOfTapsRequired = 2;
     [super viewDidLoad];
 }
 
@@ -48,6 +49,7 @@ UIView *view;
     [self setPisteButton2:nil];
     [self setDebugLabel:nil];
     [self setChangerTitreField:nil];
+    [self setDoubleTap:nil];
     [super viewDidUnload];
 }
 
@@ -103,13 +105,6 @@ UIView *view;
     [self updateTimer];
 } // pauseButton()
 
-- (IBAction)rewButton:(id)sender {
-} // rewButton()
-
-- (IBAction)ffButton:(id)sender {
-} // ffButton()
-
-
 #pragma marks - Piste Button
 
 - (IBAction)pisteButton:(id)sender {
@@ -160,18 +155,22 @@ UIView *view;
             sequence = [NSArray arrayWithArray:tabPiste2];
         }
     }
+    
+
+    
+    
 } // pisteButton()
 
 
 
 # pragma  marks - Gesture reconizer
 
-- (IBAction)test:(UIPanGestureRecognizer *)recognizer{
+- (IBAction)moveButton:(UIPanGestureRecognizer *)recognizer{
     CGPoint translation = [recognizer translationInView:self.view];
     recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,
                                          recognizer.view.center.y + translation.y);
     [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
-}
+} 
 
 - (IBAction)changeTitle:(UILongPressGestureRecognizer *)recognizer{
     NSLog(@"long press");
@@ -187,15 +186,27 @@ UIView *view;
         changeTitleField.backgroundColor = [UIColor clearColor];
         changeTitleField.textColor = [UIColor whiteColor];
         changeTitleField.font = [UIFont systemFontOfSize:15];
-        changeTitleField.text = @"Enter Title Here";
+        changeTitleField.text = @"Enter Title";
         [changeTitleAlert addSubview:changeTitleField];
         [changeTitleAlert show];
-        
-        //[(UIButton*)[recognizer view] setTitle:@"titre" forState:UIControlStateNormal];
         view = [recognizer view];
-
     }
 } // changeTitle()
+
+- (IBAction)lock:(UITapGestureRecognizer *)recognizer {
+    NSLog(@"============ double tap ============");
+    if(!isLocked){
+        UIImage* liveModeLockedButton = [[UIImage imageNamed:@"ipad-button-grey-lock.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 0, 0)];
+
+    
+        [(UIButton*)[recognizer view] setBackgroundImage:liveModeLockedButton forState:UIControlStateNormal];
+        isLocked = YES;
+    } else {
+        UIImage* liveModeButton = [[UIImage imageNamed:@"ipad-button-grey.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
+        [(UIButton*)[recognizer view] setBackgroundImage:liveModeButton forState:UIControlStateNormal];
+        isLocked = NO;
+    }
+}
 
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex : (NSInteger)buttonIndex

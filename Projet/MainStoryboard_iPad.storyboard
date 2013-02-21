@@ -208,7 +208,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 6">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -217,6 +217,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Ml5-6X-YRY" appends="YES" id="oKD-OI-M5V"/>
+                                            <outletCollection property="gestureRecognizers" destination="Bey-qG-NKk" appends="YES" id="iKt-rD-BNJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AMb-qe-zNB">
@@ -224,7 +225,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 7">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -233,6 +234,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="JTK-Gu-OkU" appends="YES" id="i31-Lu-jdW"/>
+                                            <outletCollection property="gestureRecognizers" destination="QX0-w4-1do" appends="YES" id="QB7-fY-5LC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7sP-xr-wTR">
@@ -240,7 +242,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 2">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -257,7 +259,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 3">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -274,7 +276,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 4">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -283,6 +285,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Hzj-qK-3ly" appends="YES" id="x0O-8N-LtF"/>
+                                            <outletCollection property="gestureRecognizers" destination="UCL-QC-s6T" appends="YES" id="lIX-QR-o8T"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AeI-Uf-tLf">
@@ -290,7 +293,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 5">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -299,6 +302,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="7fw-RI-6IX" appends="YES" id="2cv-jG-nPb"/>
+                                            <outletCollection property="gestureRecognizers" destination="sfv-kX-GYo" appends="YES" id="kei-4n-Ef0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N2r-n0-dwr">
@@ -306,7 +310,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 8">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -315,6 +319,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="DAi-ic-qOE" appends="YES" id="gXU-ux-aeM"/>
+                                            <outletCollection property="gestureRecognizers" destination="d6b-ra-pFr" appends="YES" id="xSW-Ig-SIs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GnY-0K-W0P">
@@ -322,7 +327,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 9">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -331,6 +336,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="VAw-s3-4zO" appends="YES" id="7fg-11-CHN"/>
+                                            <outletCollection property="gestureRecognizers" destination="ZVN-Vq-53x" appends="YES" id="fJu-ei-jHR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tsE-FH-RcV">
@@ -338,7 +344,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 10">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -347,6 +353,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="nRP-kd-ocq" appends="YES" id="B0F-f8-uwc"/>
+                                            <outletCollection property="gestureRecognizers" destination="xCP-2I-eHX" appends="YES" id="hSw-Z3-MYB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pj9-v7-shO">
@@ -354,7 +361,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 11">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -363,6 +370,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="AgJ-KC-ykR" appends="YES" id="m2H-po-wwe"/>
+                                            <outletCollection property="gestureRecognizers" destination="t3j-x8-349" appends="YES" id="bzL-xY-8Gb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7ME-fm-qBz">
@@ -370,7 +378,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 12">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -379,6 +387,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="2XO-WN-dzb" appends="YES" id="Yq7-3V-eCx"/>
+                                            <outletCollection property="gestureRecognizers" destination="11i-GL-i67" appends="YES" id="r3y-4N-xKD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E5X-5A-wxd">
@@ -386,7 +395,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 13">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -395,6 +404,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="IGy-nq-pN1" appends="YES" id="cWS-X8-6BK"/>
+                                            <outletCollection property="gestureRecognizers" destination="Wns-0q-58A" appends="YES" id="eSP-JS-O8r"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xfh-F1-6NG">
@@ -402,7 +412,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 14">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -411,6 +421,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="vw0-0P-ywh" appends="YES" id="eXS-uS-SpR"/>
+                                            <outletCollection property="gestureRecognizers" destination="RRu-52-d9W" appends="YES" id="tq4-Da-aiy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9Vv-iH-4N4">
@@ -418,7 +429,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 15">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -427,6 +438,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="vnA-4h-ubk" appends="YES" id="9yy-Fb-suL"/>
+                                            <outletCollection property="gestureRecognizers" destination="ICC-JK-MpE" appends="YES" id="2O9-R5-mWx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xtb-XI-JLF">
@@ -434,7 +446,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 16">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -443,6 +455,8 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="LCG-Gu-V4l" appends="YES" id="Xbk-Z2-Qf2"/>
+                                            <outletCollection property="gestureRecognizers" destination="BLt-QM-qRG" appends="YES" id="VdT-Nl-edx"/>
+                                            <outletCollection property="gestureRecognizers" destination="y67-cn-1eY" appends="YES" id="wiS-XW-6D0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cvZ-3F-RHZ">
@@ -450,7 +464,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 17">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -459,6 +473,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="a18-1w-pGE" appends="YES" id="XKq-Fe-hIg"/>
+                                            <outletCollection property="gestureRecognizers" destination="FwJ-l0-Ei3" appends="YES" id="wsi-rx-mrc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MQX-V5-mmz">
@@ -466,7 +481,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 18">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -475,6 +490,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="zEr-Uu-YB5" appends="YES" id="QCe-A3-gt9"/>
+                                            <outletCollection property="gestureRecognizers" destination="8NJ-ll-up0" appends="YES" id="Koh-oq-HB8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="b4l-zf-ArQ">
@@ -482,7 +498,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 19">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -491,6 +507,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="O67-Dl-aMr" appends="YES" id="W9a-ZH-hbS"/>
+                                            <outletCollection property="gestureRecognizers" destination="4RA-j1-hog" appends="YES" id="7Zb-bm-dnN"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7z1-th-AWG">
@@ -498,7 +515,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 20">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -507,6 +524,7 @@
                                         </state>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="Okf-nP-ZCV" appends="YES" id="RiV-lk-aCS"/>
+                                            <outletCollection property="gestureRecognizers" destination="D1b-nO-pfG" appends="YES" id="IuK-vn-7df"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Te-Ip-Ycx">
@@ -514,7 +532,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal">
+                                        <state key="normal" title="Bouton 1">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -533,7 +551,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cyq-ds-M9T">
-                                        <rect key="frame" x="122" y="10" width="57" height="57"/>
+                                        <rect key="frame" x="104" y="10" width="57" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Play">
@@ -562,48 +580,11 @@
                                             <action selector="pauseButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="9Pk-Nf-UmI"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JnP-Ry-aT3">
-                                        <rect key="frame" x="38" y="10" width="57" height="57"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Rew">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="rewButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="ELU-Pd-Idg"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="R5t-d3-BK9">
-                                        <rect key="frame" x="284" y="10" width="57" height="57"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="FF">
-                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ffButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="YZH-pp-8az"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6dH-cD-uzW">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6dH-cD-uzW">
                                 <rect key="frame" x="397" y="74" width="110" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="skdjh" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="27O-SQ-RbU">
-                                <rect key="frame" x="87" y="41" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -616,7 +597,7 @@
                     <navigationItem key="navigationItem" id="IuR-Em-RTA"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="debugLabel" destination="27O-SQ-RbU" id="k02-3O-fkd"/>
+                        <outlet property="doubleTap" destination="y67-cn-1eY" id="yUt-GC-OlW"/>
                         <outlet property="pisteButton1" destination="7Te-Ip-Ycx" id="66t-9y-feH"/>
                         <outlet property="pisteButton2" destination="7sP-xr-wTR" id="7JS-E2-Ti9"/>
                         <outlet property="stopwatchLabel" destination="6dH-cD-uzW" id="C6r-hM-Vn8"/>
@@ -629,12 +610,12 @@
                 </pongPressGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="O0R-AB-6Jc">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="MKZ-Fd-coD"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="l7O-YQ-Wlh"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Ml5-6X-YRY">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="0Ws-59-v01"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="lQq-ek-GYG"/>
                     </connections>
                 </panGestureRecognizer>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="UYG-QY-Nac">
@@ -649,99 +630,189 @@
                 </pongPressGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="KHi-NC-Qy3">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="dOa-Qv-YTP"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="AZE-Qa-xpV"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="JTK-Gu-OkU">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="mDd-cY-q9z"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="knX-vH-IMH"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="vJC-zQ-fh4">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="Ka2-Jt-06E"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="JcI-YL-gTd"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="DAi-ic-qOE">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="Oz6-pz-V7s"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="gkb-1b-MIC"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Hzj-qK-3ly">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="UZ5-g3-hwV"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="vvA-of-BKR"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="VAw-s3-4zO">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="Aru-U3-GvU"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="BjP-xd-ol8"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="7fw-RI-6IX">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="mk9-Pm-Xs6"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="vtN-Eq-N9t"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="nRP-kd-ocq">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="KTu-wm-3Hx"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="UjX-l3-SgD"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="AgJ-KC-ykR">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="tQ5-3a-Cap"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="Gv7-HO-lWF"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="LCG-Gu-V4l">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="gP0-Oj-MPk"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="GPw-5c-48Z"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="2XO-WN-dzb">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="m4K-SO-jML"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="Gqi-Gl-IjX"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="a18-1w-pGE">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="CB2-oi-hA5"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="EjV-a1-2AA"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="IGy-nq-pN1">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="9Yu-gQ-6Wc"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="ceq-uq-Adz"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="zEr-Uu-YB5">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="avO-Ak-wUv"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="yzj-09-vhE"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="vw0-0P-ywh">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="Jsu-PD-grw"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="a3x-yR-RXH"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="vnA-4h-ubk">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="oa1-qx-Shs"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="dpu-Q2-KBj"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="O67-Dl-aMr">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="vd2-Y3-zfs"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="TkW-eI-yRg"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Okf-nP-ZCV">
                     <connections>
-                        <action selector="test:" destination="SBR-IT-VX5" id="kVW-k1-yWm"/>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="Q7j-Ta-UKr"/>
                     </connections>
                 </panGestureRecognizer>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="SKc-SY-LLC">
                     <connections>
-                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="C1D-4l-moc"/>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="FSN-UR-cgk"/>
                     </connections>
                 </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="UCL-QC-s6T">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="ivI-lS-R3G"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="sfv-kX-GYo">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="qyH-8d-Qa2"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Bey-qG-NKk">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="Lo2-ao-Wio"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="QX0-w4-1do">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="LxC-ew-y1r"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="d6b-ra-pFr">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="dEc-tj-1G9"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ZVN-Vq-53x">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="DYh-w6-0rW"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="xCP-2I-eHX">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="bhz-pQ-vLz"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ICC-JK-MpE">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="WtB-2t-zA2"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="RRu-52-d9W">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="rYa-cy-K4m"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="D1b-nO-pfG">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="3rT-ct-lme"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="4RA-j1-hog">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="EVR-rh-4tC"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Wns-0q-58A">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="TEH-q3-pI4"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="8NJ-ll-up0">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="VrD-DA-Ys6"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="11i-GL-i67">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="GOG-Hu-OHy"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="FwJ-l0-Ei3">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="U0s-pT-tEy"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="t3j-x8-349">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="8A8-Y6-fuq"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="BLt-QM-qRG">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="jjw-9D-epf"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <tapGestureRecognizer id="y67-cn-1eY">
+                    <connections>
+                        <action selector="lock:" destination="SBR-IT-VX5" id="nRA-m3-uZn"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2141" y="48"/>
         </scene>
@@ -785,12 +856,14 @@
             <relationships>
                 <relationship kind="action" name="changeTitle:" candidateClass="UILongPressGestureRecognizer"/>
                 <relationship kind="action" name="ffButton:"/>
+                <relationship kind="action" name="lock:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="moveButton:" candidateClass="UIPanGestureRecognizer"/>
                 <relationship kind="action" name="pauseButton:"/>
                 <relationship kind="action" name="pisteButton:"/>
                 <relationship kind="action" name="playButton:"/>
                 <relationship kind="action" name="rewButton:"/>
-                <relationship kind="action" name="test:" candidateClass="UIPanGestureRecognizer"/>
                 <relationship kind="outlet" name="debugLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="doubleTap" candidateClass="UITapGestureRecognizer"/>
                 <relationship kind="outlet" name="pisteButton1" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="pisteButton2" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="stopwatchLabel" candidateClass="UILabel"/>
