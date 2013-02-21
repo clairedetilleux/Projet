@@ -18,22 +18,26 @@
 
 @property (strong, nonatomic) NSDate *piste1;               // Stores the date of the click on the piste1 button
 
-
 @end
 
 @implementation LiveModeViewController
-@synthesize texte = _texte;
+@synthesize changerTitreField = changerTitreField;
 @synthesize pisteButton1 = _pisteButton1;
 @synthesize pisteButton2 = _pisteButton2;
 @synthesize debugLabel = _debugLabel;
 @synthesize stopwatchLabel;
 
 
+
 /************ isButtonClicked ************/
 int playButtonClicked;
+bool popup = NO;
+UIView *view;
 
 - (void)viewDidLoad
 {
+
+    
     [super viewDidLoad];
 }
 
@@ -43,7 +47,7 @@ int playButtonClicked;
     [self setPisteButton1:nil];
     [self setPisteButton2:nil];
     [self setDebugLabel:nil];
-    [self setTexte:nil];
+    [self setChangerTitreField:nil];
     [super viewDidUnload];
 }
 
@@ -126,6 +130,7 @@ int playButtonClicked;
    
     // Création d'un tableau pour recueillir les évènements
     sequence = [[NSMutableArray alloc] init];
+        
     
     /* Le if prend la position du bouton sur la fenêtre
      * Quelque soit le titre de celui ci
@@ -159,31 +164,49 @@ int playButtonClicked;
 
 
 
+# pragma  marks - Gesture reconizer
 
-- (IBAction)test:(UIPanGestureRecognizer *)recognizer {
+- (IBAction)test:(UIPanGestureRecognizer *)recognizer{
     CGPoint translation = [recognizer translationInView:self.view];
     recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,
                                          recognizer.view.center.y + translation.y);
     [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
 }
 
-- (IBAction)changeTitle:(UILongPressGestureRecognizer *) recognizer{
+- (IBAction)changeTitle:(UILongPressGestureRecognizer *)recognizer{
     NSLog(@"long press");
-    
-    _texte = [[UITextField alloc] initWithFrame:CGRectMake(10, 80, 80, 25)];
-    [_texte setBorderStyle:UITextBorderStyleRoundedRect];
-    [_texte setReturnKeyType:UIReturnKeyDone];
-    _texte.delegate = self;
-    [self.view addSubview:_texte];
-}
+    if (!popup) {
+        popup = YES;
+        changeTitleAlert = [[UIAlertView alloc] initWithTitle:@"Change Title"
+                                                      message:@"\n\n"
+                                                     delegate:self
+                                            cancelButtonTitle:@"Close"
+                                            otherButtonTitles:nil];
+        
+        changeTitleField = [[UITextField alloc] initWithFrame:CGRectMake(15, 35, 250, 30)];
+        changeTitleField.backgroundColor = [UIColor clearColor];
+        changeTitleField.textColor = [UIColor whiteColor];
+        changeTitleField.font = [UIFont systemFontOfSize:15];
+        changeTitleField.text = @"Enter Title Here";
+        [changeTitleAlert addSubview:changeTitleField];
+        [changeTitleAlert show];
+        
+        //[(UIButton*)[recognizer view] setTitle:@"titre" forState:UIControlStateNormal];
+        view = [recognizer view];
+
+    }
+} // changeTitle()
 
 
-// Comment changer le titre du bouton courant ?
--(BOOL)textFieldShouldReturn: (UITextField *)textField
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex : (NSInteger)buttonIndex
 {
-    [textField resignFirstResponder];
-    [_pisteButton2 setTitle:textField.text forState:UIControlStateNormal];
-    return YES;
-}
+    [(UIButton*)view setTitle:changeTitleField.text forState:UIControlStateNormal];
+    //[_pisteButton2 setTitle:changeTitleField.text forState:UIControlStateNormal];
+    NSLog(@"close button clicked");
+    popup=NO;
+} //alertView()
+
+
+
 
 @end

@@ -10,10 +10,14 @@
 #import "DownloadManager.h"
 
 
-@interface LiveModeViewController : UIViewController <UITextFieldDelegate>
+@interface LiveModeViewController : UIViewController <UIAlertViewDelegate>
 {
     NSMutableArray *sequence;
-    UITextField *texte;
+    UITextField *changeTitleField;
+    
+    UIView *changeTitleView;
+    
+    UIAlertView *changeTitleAlert;
 }
 
 
@@ -38,6 +42,9 @@
 - (IBAction)test:(UIPanGestureRecognizer *)recognizer;
 - (IBAction)changeTitle:(UILongPressGestureRecognizer *)recognizer;
 
-@property (nonatomic, retain) UITextField *texte;
+
+@property (nonatomic, retain) UITextField *changerTitreField;
+
+
 
 @end

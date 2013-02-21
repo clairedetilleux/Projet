@@ -11,6 +11,10 @@
 		9B0B1B5F16D25E730026018A /* sequence.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B1B5E16D25E730026018A /* sequence.json */; };
 		9B0B1B6616D25F930026018A /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B1B6316D25F930026018A /* DownloadManager.m */; };
 		9B0B1B6716D25F930026018A /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B1B6516D25F930026018A /* DownloadOperation.m */; };
+		9B2CAB5116D6184B0087CA72 /* ipad-button-grey-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2CAB4D16D6184B0087CA72 /* ipad-button-grey-pressed.png */; };
+		9B2CAB5216D6184B0087CA72 /* ipad-button-grey-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2CAB4E16D6184B0087CA72 /* ipad-button-grey-pressed@2x.png */; };
+		9B2CAB5316D6184B0087CA72 /* ipad-button-grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2CAB4F16D6184B0087CA72 /* ipad-button-grey.png */; };
+		9B2CAB5416D6184B0087CA72 /* ipad-button-grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2CAB5016D6184B0087CA72 /* ipad-button-grey@2x.png */; };
 		9B81872916BFEF6000D92EF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81872816BFEF6000D92EF6 /* UIKit.framework */; };
 		9B81872B16BFEF6000D92EF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81872A16BFEF6000D92EF6 /* Foundation.framework */; };
 		9B81872D16BFEF6000D92EF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B81872C16BFEF6000D92EF6 /* CoreGraphics.framework */; };
@@ -47,6 +51,10 @@
 		9B0B1B6316D25F930026018A /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 		9B0B1B6416D25F930026018A /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
 		9B0B1B6516D25F930026018A /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
+		9B2CAB4D16D6184B0087CA72 /* ipad-button-grey-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-button-grey-pressed.png"; sourceTree = "<group>"; };
+		9B2CAB4E16D6184B0087CA72 /* ipad-button-grey-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-button-grey-pressed@2x.png"; sourceTree = "<group>"; };
+		9B2CAB4F16D6184B0087CA72 /* ipad-button-grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-button-grey.png"; sourceTree = "<group>"; };
+		9B2CAB5016D6184B0087CA72 /* ipad-button-grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-button-grey@2x.png"; sourceTree = "<group>"; };
 		9B81872416BFEF6000D92EF6 /* Projet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Projet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B81872816BFEF6000D92EF6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B81872A16BFEF6000D92EF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -107,6 +115,17 @@
 			name = Download;
 			sourceTree = "<group>";
 		};
+		9B2CAB4B16D6182A0087CA72 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9B2CAB4D16D6184B0087CA72 /* ipad-button-grey-pressed.png */,
+				9B2CAB4E16D6184B0087CA72 /* ipad-button-grey-pressed@2x.png */,
+				9B2CAB4F16D6184B0087CA72 /* ipad-button-grey.png */,
+				9B2CAB5016D6184B0087CA72 /* ipad-button-grey@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		9B81871916BFEF6000D92EF6 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +159,7 @@
 		9B81872E16BFEF6000D92EF6 /* Projet */ = {
 			isa = PBXGroup;
 			children = (
+				9B2CAB4B16D6182A0087CA72 /* Resources */,
 				9B81873716BFEF6000D92EF6 /* AppDelegate.h */,
 				9B81873816BFEF6000D92EF6 /* AppDelegate.m */,
 				9BBAF50916CE45B200A22ABD /* Controller */,
@@ -270,6 +290,10 @@
 				9B81873C16BFEF6000D92EF6 /* MainStoryboard_iPhone.storyboard in Resources */,
 				9BBAF51316CE642C00A22ABD /* MainStoryboard_iPad.storyboard in Resources */,
 				9B0B1B5F16D25E730026018A /* sequence.json in Resources */,
+				9B2CAB5116D6184B0087CA72 /* ipad-button-grey-pressed.png in Resources */,
+				9B2CAB5216D6184B0087CA72 /* ipad-button-grey-pressed@2x.png in Resources */,
+				9B2CAB5316D6184B0087CA72 /* ipad-button-grey.png in Resources */,
+				9B2CAB5416D6184B0087CA72 /* ipad-button-grey@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
