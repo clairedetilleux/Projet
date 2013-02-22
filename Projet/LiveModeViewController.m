@@ -16,7 +16,7 @@
 
 @property (strong, nonatomic) NSDate *ffDate;               // Stores the date of the click on the ff button
 
-@property (strong, nonatomic) NSDate *piste1;               // Stores the date of the click on the piste1 button
+@property (strong, nonatomic) NSDate *piste;               // Stores the date of the click on the piste1 button
 
 @end
 
@@ -38,6 +38,7 @@ UIView *view;
 UIButton *changeTitleButton;
 bool isLocked = NO;
 int numberOfTap = 2;
+int count = 0;
 
 
 - (void)viewDidLoad
@@ -51,6 +52,9 @@ int numberOfTap = 2;
     // Solution : for now drag a UITapGestureRecognizer per button
     _doubleTap.numberOfTapsRequired = numberOfTap;          // Button 1
     _doubleTap2.numberOfTapsRequired = numberOfTap;         // Button 16
+    
+    sequence = [[NSMutableArray alloc] init];
+
     [super viewDidLoad];
 }
 
@@ -83,7 +87,7 @@ int numberOfTap = 2;
     
     // Create a date formatter
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"HH:mm:ss.S"];
+    [dateFormatter setDateFormat:@"HH:mm:ss.SSS"];
     [dateFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
     
     
@@ -112,6 +116,7 @@ int numberOfTap = 2;
 } // startButton()
 
 - (IBAction)pauseButton:(id)sender {
+    playButtonClicked = 0;
     [self.stopWatchTimer invalidate];
     self.stopWatchTimer = nil;
     [self updateTimer];
@@ -120,35 +125,37 @@ int numberOfTap = 2;
 #pragma marks - Piste Button
 
 - (IBAction)pisteButton:(UIButton*) sender {
-    
-    self.piste1 = [NSDate date];
-    
-    // Récupère le temps passé depuis l'appuie sur playButton (temps affiché par le timer)
-    NSTimeInterval timeIntervalPiste1 = [_piste1 timeIntervalSinceDate:self.startDate];
-    NSDate *timerPiste1Date = [NSDate dateWithTimeIntervalSince1970:timeIntervalPiste1];
+    NSLog(@"Button clicked");
+    self.piste = [NSDate date];
+    // Stores the time elapsed since the click on the play button
+    NSTimeInterval timeIntervalPiste = [_piste timeIntervalSinceDate:self.startDate];
+    NSDate *timerPiste1Date = [NSDate dateWithTimeIntervalSince1970:timeIntervalPiste];
     
     // Create a date formatter
     NSDateFormatter *datePisteFormatter = [[NSDateFormatter alloc] init];
-    [datePisteFormatter setDateFormat:@"HH:mm:ss.S"];
+    [datePisteFormatter setDateFormat:@"HH:mm:ss.SSS"];
     [datePisteFormatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
         
-    // Affiche le moment d'appuie sur le bouton de piste 1
-    NSString *time = [datePisteFormatter stringFromDate:timerPiste1Date];
+    // Stores the date of click on a track button
+    NSString *clickTime = [datePisteFormatter stringFromDate:timerPiste1Date];
    
-    // Création d'un tableau pour recueillir les évènements
-    sequence = [[NSMutableArray alloc] init];
+    // The array stores the events
     
-    // Envoie de la requête qui lance le jouet
+    //  Send play request
     if(playButtonClicked == 1){
-        // Le titre qui est enregistré est celui du bouton
-        // Création d'un tableau 1x2 contenant cet évènement
-        NSArray * tabPiste1 = [[NSArray alloc] init];
-        tabPiste1 = [NSArray arrayWithObjects: time, sender.currentTitle, nil];
-        sequence = [NSArray arrayWithArray:tabPiste1];
-    
-        NSLog(sender.currentTitle);
-        NSLog(time);
-    } 
+        // The title stores in the array is the on on the button
+        // This array (1x2) stores this event 
+        NSArray * singleEventArray = [[NSArray alloc] init];
+        singleEventArray = [NSArray arrayWithObjects: clickTime, sender.currentTitle, nil];
+        NSLog(@"singleEventArray: %@", singleEventArray);
+        count++;
+        NSLog(@"count : %d", count-1);
+        //sequence = [NSArray arrayWithArray:singleEventArray];
+        [sequence insertObject:singleEventArray atIndex:count-1];
+        NSLog(@"sequence: %@", sequence);
+        //+ (id)arrayWithCapacity:(NSUInteger)numItems
+        //sequence = [NSMutableArray ];
+    }
 } // pisteButton()
 
 
@@ -207,7 +214,6 @@ int numberOfTap = 2;
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex : (NSInteger)buttonIndex
 {
     [(UIButton*)view setTitle:changeTitleField.text forState:UIControlStateNormal];
-    //[_pisteButton2 setTitle:changeTitleField.text forState:UIControlStateNormal];
     NSLog(@"close button clicked");
     popup=NO;
 } //alertView()

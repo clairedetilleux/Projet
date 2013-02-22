@@ -201,6 +201,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="6Og-de-S1e"/>
                                             <outletCollection property="gestureRecognizers" destination="Ml5-6X-YRY" appends="YES" id="oKD-OI-M5V"/>
                                             <outletCollection property="gestureRecognizers" destination="Bey-qG-NKk" appends="YES" id="iKt-rD-BNJ"/>
                                         </connections>
@@ -218,6 +219,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="FNd-ls-P7Q"/>
                                             <outletCollection property="gestureRecognizers" destination="JTK-Gu-OkU" appends="YES" id="i31-Lu-jdW"/>
                                             <outletCollection property="gestureRecognizers" destination="QX0-w4-1do" appends="YES" id="QB7-fY-5LC"/>
                                         </connections>
@@ -253,6 +255,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="pOA-OF-5zM"/>
                                             <outletCollection property="gestureRecognizers" destination="MSS-1a-bef" appends="YES" id="BTc-rl-N8U"/>
                                             <outletCollection property="gestureRecognizers" destination="vJC-zQ-fh4" appends="YES" id="B2s-hR-QLw"/>
                                         </connections>
@@ -270,6 +273,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="txe-Li-RIW"/>
                                             <outletCollection property="gestureRecognizers" destination="Hzj-qK-3ly" appends="YES" id="x0O-8N-LtF"/>
                                             <outletCollection property="gestureRecognizers" destination="UCL-QC-s6T" appends="YES" id="lIX-QR-o8T"/>
                                         </connections>
@@ -287,6 +291,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="uj2-JB-28s"/>
                                             <outletCollection property="gestureRecognizers" destination="7fw-RI-6IX" appends="YES" id="2cv-jG-nPb"/>
                                             <outletCollection property="gestureRecognizers" destination="sfv-kX-GYo" appends="YES" id="kei-4n-Ef0"/>
                                         </connections>
@@ -304,6 +309,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="uBE-ZA-uIS"/>
                                             <outletCollection property="gestureRecognizers" destination="DAi-ic-qOE" appends="YES" id="gXU-ux-aeM"/>
                                             <outletCollection property="gestureRecognizers" destination="d6b-ra-pFr" appends="YES" id="xSW-Ig-SIs"/>
                                         </connections>
@@ -321,6 +327,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="CqE-CG-aKY"/>
                                             <outletCollection property="gestureRecognizers" destination="VAw-s3-4zO" appends="YES" id="7fg-11-CHN"/>
                                             <outletCollection property="gestureRecognizers" destination="ZVN-Vq-53x" appends="YES" id="fJu-ei-jHR"/>
                                         </connections>
@@ -338,6 +345,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="oDg-Tv-gXk"/>
                                             <outletCollection property="gestureRecognizers" destination="nRP-kd-ocq" appends="YES" id="B0F-f8-uwc"/>
                                             <outletCollection property="gestureRecognizers" destination="xCP-2I-eHX" appends="YES" id="hSw-Z3-MYB"/>
                                         </connections>
@@ -355,6 +363,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="s1v-lN-tz8"/>
                                             <outletCollection property="gestureRecognizers" destination="AgJ-KC-ykR" appends="YES" id="m2H-po-wwe"/>
                                             <outletCollection property="gestureRecognizers" destination="t3j-x8-349" appends="YES" id="bzL-xY-8Gb"/>
                                         </connections>
@@ -372,6 +381,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="AqL-hE-YeV"/>
                                             <outletCollection property="gestureRecognizers" destination="2XO-WN-dzb" appends="YES" id="Yq7-3V-eCx"/>
                                             <outletCollection property="gestureRecognizers" destination="11i-GL-i67" appends="YES" id="r3y-4N-xKD"/>
                                         </connections>
@@ -389,6 +399,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="DcE-fa-1kx"/>
                                             <outletCollection property="gestureRecognizers" destination="IGy-nq-pN1" appends="YES" id="cWS-X8-6BK"/>
                                             <outletCollection property="gestureRecognizers" destination="Wns-0q-58A" appends="YES" id="eSP-JS-O8r"/>
                                         </connections>
@@ -406,6 +417,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="fvV-Nk-hF5"/>
                                             <outletCollection property="gestureRecognizers" destination="vw0-0P-ywh" appends="YES" id="eXS-uS-SpR"/>
                                             <outletCollection property="gestureRecognizers" destination="RRu-52-d9W" appends="YES" id="tq4-Da-aiy"/>
                                         </connections>
@@ -423,6 +435,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="erZ-fA-Z80"/>
                                             <outletCollection property="gestureRecognizers" destination="vnA-4h-ubk" appends="YES" id="9yy-Fb-suL"/>
                                             <outletCollection property="gestureRecognizers" destination="ICC-JK-MpE" appends="YES" id="2O9-R5-mWx"/>
                                         </connections>
@@ -440,6 +453,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="ICI-5P-nVx"/>
                                             <outletCollection property="gestureRecognizers" destination="LCG-Gu-V4l" appends="YES" id="Xbk-Z2-Qf2"/>
                                             <outletCollection property="gestureRecognizers" destination="BLt-QM-qRG" appends="YES" id="VdT-Nl-edx"/>
                                             <outletCollection property="gestureRecognizers" destination="rbL-sb-tZV" appends="YES" id="P3l-DT-T23"/>
@@ -458,6 +472,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="zIj-Vg-mTT"/>
                                             <outletCollection property="gestureRecognizers" destination="a18-1w-pGE" appends="YES" id="XKq-Fe-hIg"/>
                                             <outletCollection property="gestureRecognizers" destination="FwJ-l0-Ei3" appends="YES" id="wsi-rx-mrc"/>
                                         </connections>
@@ -475,6 +490,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="k9D-oa-kat"/>
                                             <outletCollection property="gestureRecognizers" destination="zEr-Uu-YB5" appends="YES" id="QCe-A3-gt9"/>
                                             <outletCollection property="gestureRecognizers" destination="8NJ-ll-up0" appends="YES" id="Koh-oq-HB8"/>
                                         </connections>
@@ -492,6 +508,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="AMM-lp-HiY"/>
                                             <outletCollection property="gestureRecognizers" destination="O67-Dl-aMr" appends="YES" id="W9a-ZH-hbS"/>
                                             <outletCollection property="gestureRecognizers" destination="4RA-j1-hog" appends="YES" id="7Zb-bm-dnN"/>
                                         </connections>
@@ -509,6 +526,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="VzM-3M-utU"/>
                                             <outletCollection property="gestureRecognizers" destination="Okf-nP-ZCV" appends="YES" id="RiV-lk-aCS"/>
                                             <outletCollection property="gestureRecognizers" destination="D1b-nO-pfG" appends="YES" id="IuK-vn-7df"/>
                                         </connections>
@@ -846,7 +864,7 @@
                 <relationship kind="action" name="lock:" candidateClass="UITapGestureRecognizer"/>
                 <relationship kind="action" name="moveButton:" candidateClass="UIPanGestureRecognizer"/>
                 <relationship kind="action" name="pauseButton:"/>
-                <relationship kind="action" name="pisteButton:"/>
+                <relationship kind="action" name="pisteButton:" candidateClass="UIButton"/>
                 <relationship kind="action" name="playButton:"/>
                 <relationship kind="action" name="rewButton:"/>
                 <relationship kind="outlet" name="doubleTap" candidateClass="UITapGestureRecognizer"/>
