@@ -14,15 +14,10 @@
 @property (strong, nonatomic) NSTimer *stopWatchTimer;      // Store the timer that fires after a certain time
 @property (strong, nonatomic) NSDate *startDate;            // Stores the date of the click on the start button
 
-@property (strong, nonatomic) NSDate *ffDate;               // Stores the date of the click on the ff button
-@property (strong, nonatomic) NSDate *currentDate;          // Date courante
-
-
 
 @end
 
 @implementation LectureModeViewController
-@synthesize label;
 @synthesize tenSecLabel = _tenSecLabel;
 @synthesize fiveSecLabel = _fiveSecLabel;
 @synthesize stopwatchLabel;
@@ -30,13 +25,18 @@
 
 - (void)viewDidLoad
 {
+    [self.view setBackgroundColor:
+     [[UIColor alloc]
+      initWithPatternImage:[UIImage imageNamed:@"Background2.png"]]];
+    
+    //UIImage* background = [[UIImage imageNamed:@"Background.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    //self.view.backgroundColor = background;
     [super viewDidLoad];
 }
 
 
 - (void)viewDidUnload
 {
-    [self setLabel:nil];
     [self setStopwatchLabel:nil];
     [self setTenSecLabel:nil];
     [self setFiveSecLabel:nil];
@@ -45,7 +45,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Forcer le landscape
+    // Forcer landscape
     return UIDeviceOrientationIsLandscape(interfaceOrientation);
 }
 
@@ -79,8 +79,6 @@
 } //updateTimer
 
 # pragma marks - Timer Manager Methods
-
-/***************** Gestion du timer *****************/
 
 - (IBAction)rewButton:(id)sender {
 } // rewButton

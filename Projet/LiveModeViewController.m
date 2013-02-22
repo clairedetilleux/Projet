@@ -22,23 +22,33 @@
 
 @implementation LiveModeViewController
 @synthesize changerTitreField = changerTitreField;
+
 @synthesize doubleTap = _doubleTap;
+@synthesize doubleTap2 = _doubleTap2;
+
 @synthesize pisteButton1 = _pisteButton1;
 @synthesize pisteButton2 = _pisteButton2;
-@synthesize debugLabel = _debugLabel;
 @synthesize stopwatchLabel;
 
 
 
-/************ isButtonClicked ************/
 int playButtonClicked;
 bool popup = NO;
 UIView *view;
 bool isLocked = NO;
+int numberOfTap = 2;
 
 - (void)viewDidLoad
 {
-    _doubleTap.numberOfTapsRequired = 2;
+    
+    [self.view setBackgroundColor:
+     [[UIColor alloc]
+      initWithPatternImage:[UIImage imageNamed:@"Background2.png"]]];
+
+    // doubleTap only recognize the last button attached
+    // Solution : for now drag a UITapGestureRecognizer per button
+    _doubleTap.numberOfTapsRequired = numberOfTap;          // Button 1
+    _doubleTap2.numberOfTapsRequired = numberOfTap;         // Button 16
     [super viewDidLoad];
 }
 
@@ -47,15 +57,15 @@ bool isLocked = NO;
     [self setStopwatchLabel:nil];
     [self setPisteButton1:nil];
     [self setPisteButton2:nil];
-    [self setDebugLabel:nil];
     [self setChangerTitreField:nil];
     [self setDoubleTap:nil];
+    //[self setDoubleTap2:nil];
     [super viewDidUnload];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	// Forcer le landscape
+	// Force landscape
     return UIDeviceOrientationIsLandscape(interfaceOrientation);
 }
 
@@ -196,11 +206,13 @@ bool isLocked = NO;
 - (IBAction)lock:(UITapGestureRecognizer *)recognizer {
     NSLog(@"============ double tap ============");
     if(!isLocked){
-        UIImage* liveModeLockedButton = [[UIImage imageNamed:@"ipad-button-grey-lock.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 0, 0)];
+        UIImage* liveModeLockedButton = [[UIImage imageNamed:@"ipad-button-red.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
 
-    
         [(UIButton*)[recognizer view] setBackgroundImage:liveModeLockedButton forState:UIControlStateNormal];
         isLocked = YES;
+        
+        // Send play request
+        
     } else {
         UIImage* liveModeButton = [[UIImage imageNamed:@"ipad-button-grey.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
         [(UIButton*)[recognizer view] setBackgroundImage:liveModeButton forState:UIControlStateNormal];

@@ -25,6 +25,14 @@
     
     UIImage* liveModePressedButton = [[UIImage imageNamed:@"ipad-button-grey-pressed.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
     [[UIButton appearance] setBackgroundImage:liveModePressedButton forState:UIControlStateHighlighted];
+    
+    //UIImage* background = [[UIImage imageNamed:@"Background.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    //LiveModeViewController.backgroundColor = background;
+    //[[UIView appearance] setBackgroundImage:background];
+    
+
+    
+
 }
 
 

@@ -8,11 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LectureModeViewController : UIViewController{
-    UILabel *label;
-    NSTimer *pollingTimer;
-    NSDate *timer;    
-}
+@interface LectureModeViewController : UIViewController
 
 
 
@@ -25,7 +21,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *label;
 
 
-/************** Variables debug ************/
+/************** debug label ************/
 @property (weak, nonatomic) IBOutlet UILabel *tenSecLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *fiveSecLabel;
@@ -37,7 +33,6 @@
 - (IBAction)pauseButton:(id)sender;
 - (IBAction)ffButton:(id)sender;
 
-- (NSDictionary *)userInfo;
 
 
 
