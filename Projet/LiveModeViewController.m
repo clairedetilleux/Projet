@@ -35,8 +35,10 @@
 int playButtonClicked;
 bool popup = NO;
 UIView *view;
+UIButton *changeTitleButton;
 bool isLocked = NO;
 int numberOfTap = 2;
+
 
 - (void)viewDidLoad
 {
@@ -117,7 +119,7 @@ int numberOfTap = 2;
 
 #pragma marks - Piste Button
 
-- (IBAction)pisteButton:(id)sender {
+- (IBAction)pisteButton:(UIButton*) sender {
     
     self.piste1 = [NSDate date];
     
@@ -135,40 +137,18 @@ int numberOfTap = 2;
    
     // Création d'un tableau pour recueillir les évènements
     sequence = [[NSMutableArray alloc] init];
-        
     
-    /* Le if prend la position du bouton sur la fenêtre
-     * Quelque soit le titre de celui ci
-     * C'est le titre du bouton physique qui est enregistré dans 
-     * la séquence
-     */
-    if(sender == _pisteButton1){
-        NSLog(_pisteButton1.currentTitle);
-        // Envoie de la requête qui lance le jouet
-        if(playButtonClicked == 1){
-            NSLog(@"Bouton 1 appuyé !");
-            // Le titre qui est enregistré est celui du bouton
-            NSString * piste =  _pisteButton1.currentTitle;
-            
-            // Création d'un tableau 1x2 contenant cet évènement
-            NSArray * tabPiste1 = [[NSArray alloc] init];
-            tabPiste1 = [NSArray arrayWithObjects: time, piste, nil];
-            sequence = [NSArray arrayWithArray:tabPiste1];
-        }
-    } else if (sender == _pisteButton2){
-        if(playButtonClicked == 1){
-            NSLog(@"Bouton 2 appuyé !");
-            NSString * piste =  _pisteButton2.currentTitle;
-            // Création d'un tableau 1x2 contenant cet évènement
-            NSArray * tabPiste2 = [[NSArray alloc] init];
-            tabPiste2 = [NSArray arrayWithObjects: time, piste, nil];
-            sequence = [NSArray arrayWithArray:tabPiste2];
-        }
-    }
+    // Envoie de la requête qui lance le jouet
+    if(playButtonClicked == 1){
+        // Le titre qui est enregistré est celui du bouton
+        // Création d'un tableau 1x2 contenant cet évènement
+        NSArray * tabPiste1 = [[NSArray alloc] init];
+        tabPiste1 = [NSArray arrayWithObjects: time, sender.currentTitle, nil];
+        sequence = [NSArray arrayWithArray:tabPiste1];
     
-
-    
-    
+        NSLog(sender.currentTitle);
+        NSLog(time);
+    } 
 } // pisteButton()
 
 
@@ -184,22 +164,25 @@ int numberOfTap = 2;
 
 - (IBAction)changeTitle:(UILongPressGestureRecognizer *)recognizer{
     NSLog(@"long press");
+
+    view = [recognizer view];
+    [(UIButton*)view currentTitle];
+
     if (!popup) {
         popup = YES;
         changeTitleAlert = [[UIAlertView alloc] initWithTitle:@"Change Title"
                                                       message:@"\n\n"
                                                      delegate:self
-                                            cancelButtonTitle:@"Close"
+                                            cancelButtonTitle:@"Submit"
                                             otherButtonTitles:nil];
         
         changeTitleField = [[UITextField alloc] initWithFrame:CGRectMake(15, 35, 250, 30)];
         changeTitleField.backgroundColor = [UIColor clearColor];
         changeTitleField.textColor = [UIColor whiteColor];
         changeTitleField.font = [UIFont systemFontOfSize:15];
-        changeTitleField.text = @"Enter Title";
+        changeTitleField.text = [(UIButton*)view currentTitle];
         [changeTitleAlert addSubview:changeTitleField];
         [changeTitleAlert show];
-        view = [recognizer view];
     }
 } // changeTitle()
 

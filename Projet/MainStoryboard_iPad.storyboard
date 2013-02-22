@@ -235,6 +235,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="h7m-8H-Td2"/>
                                             <outletCollection property="gestureRecognizers" destination="KHi-NC-Qy3" appends="YES" id="Of4-KA-Piy"/>
                                             <outletCollection property="gestureRecognizers" destination="SKc-SY-LLC" appends="YES" id="dBw-MV-DI1"/>
                                         </connections>
@@ -519,12 +520,13 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Bouton 1">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="KLA-Qd-8L2"/>
                                             <outletCollection property="gestureRecognizers" destination="O0R-AB-6Jc" appends="YES" id="O0B-QZ-ef8"/>
                                             <outletCollection property="gestureRecognizers" destination="UYG-QY-Nac" appends="YES" id="whC-D2-8dv"/>
                                             <outletCollection property="gestureRecognizers" destination="7P1-UO-eCX" appends="YES" id="tyL-O7-A3D"/>
@@ -533,7 +535,7 @@
                                 </subviews>
                             </scrollView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6dH-cD-uzW">
-                                <rect key="frame" x="397" y="74" width="110" height="21"/>
+                                <rect key="frame" x="365" y="74" width="110" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -576,7 +578,8 @@
                     <navigationItem key="navigationItem" id="IuR-Em-RTA"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="doubleTap" destination="rbL-sb-tZV" id="dPA-1d-6eO"/>
+                        <outlet property="doubleTap" destination="7P1-UO-eCX" id="Y2v-oV-fVP"/>
+                        <outlet property="doubleTap2" destination="rbL-sb-tZV" id="Mpi-Cf-gEZ"/>
                         <outlet property="pisteButton1" destination="7Te-Ip-Ycx" id="66t-9y-feH"/>
                         <outlet property="pisteButton2" destination="7sP-xr-wTR" id="7JS-E2-Ti9"/>
                         <outlet property="stopwatchLabel" destination="6dH-cD-uzW" id="C6r-hM-Vn8"/>

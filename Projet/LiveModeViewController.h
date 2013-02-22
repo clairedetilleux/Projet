@@ -13,10 +13,9 @@
 @interface LiveModeViewController : UIViewController <UIAlertViewDelegate>
 {
     NSMutableArray *sequence;
+    
     UITextField *changeTitleField;
-    
     UIView *changeTitleView;
-    
     UIAlertView *changeTitleAlert;
 }
 
@@ -32,7 +31,7 @@
 - (IBAction)rewButton:(id)sender;
 - (IBAction)ffButton:(id)sender;
 
-- (IBAction)pisteButton:(id)sender;
+- (IBAction)pisteButton:(UIButton*)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *pisteButton1;
 
