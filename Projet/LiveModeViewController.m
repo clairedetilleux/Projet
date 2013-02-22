@@ -117,6 +117,12 @@ int count = 0;
 
 - (IBAction)pauseButton:(id)sender {
     playButtonClicked = 0;
+    NSLog(@"sequence: %@", sequence);
+    
+    // Stores the value of the array at index n (caution : the indexes strart at 0)
+    NSLog(@"tab : %@", [sequence objectAtIndex:0]);
+    
+    
     [self.stopWatchTimer invalidate];
     self.stopWatchTimer = nil;
     [self updateTimer];
@@ -147,14 +153,12 @@ int count = 0;
         // This array (1x2) stores this event 
         NSArray * singleEventArray = [[NSArray alloc] init];
         singleEventArray = [NSArray arrayWithObjects: clickTime, sender.currentTitle, nil];
-        NSLog(@"singleEventArray: %@", singleEventArray);
+        //NSLog(@"singleEventArray: %@", singleEventArray);
         count++;
         NSLog(@"count : %d", count-1);
-        //sequence = [NSArray arrayWithArray:singleEventArray];
         [sequence insertObject:singleEventArray atIndex:count-1];
-        NSLog(@"sequence: %@", sequence);
-        //+ (id)arrayWithCapacity:(NSUInteger)numItems
-        //sequence = [NSMutableArray ];
+        //NSLog(@"sequence: %@", sequence);
+        
     }
 } // pisteButton()
 
