@@ -32,6 +32,8 @@
 		9B81875716BFEF6000D92EF6 /* ProjetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B81875616BFEF6000D92EF6 /* ProjetTests.m */; };
 		9B81876316BFFB8500D92EF6 /* LiveModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B81876116BFFB8500D92EF6 /* LiveModeViewController.m */; };
 		9BBAF51316CE642C00A22ABD /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBAF51216CE642C00A22ABD /* MainStoryboard_iPad.storyboard */; };
+		9BBE2CBB16DBAAD1002FC945 /* ipad-button-red-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE2CB916DBAAD1002FC945 /* ipad-button-red-pressed.png */; };
+		9BBE2CBC16DBAAD1002FC945 /* ipad-button-red-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BBE2CBA16DBAAD1002FC945 /* ipad-button-red-pressed@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		9B81876016BFFB8500D92EF6 /* LiveModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveModeViewController.h; sourceTree = "<group>"; };
 		9B81876116BFFB8500D92EF6 /* LiveModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveModeViewController.m; sourceTree = "<group>"; };
 		9BBAF51216CE642C00A22ABD /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		9BBE2CB916DBAAD1002FC945 /* ipad-button-red-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-button-red-pressed.png"; sourceTree = "<group>"; };
+		9BBE2CBA16DBAAD1002FC945 /* ipad-button-red-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad-button-red-pressed@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				9B2C548F16D780700076C85A /* Background2.png */,
 				9B2C549116D797890076C85A /* Background2@2x.png */,
 				9B2CAB4E16D6184B0087CA72 /* ipad-button-grey-pressed@2x.png */,
+				9BBE2CB916DBAAD1002FC945 /* ipad-button-red-pressed.png */,
+				9BBE2CBA16DBAAD1002FC945 /* ipad-button-red-pressed@2x.png */,
 				9B2CAB4F16D6184B0087CA72 /* ipad-button-grey.png */,
 				9B2CAB5016D6184B0087CA72 /* ipad-button-grey@2x.png */,
 			);
@@ -301,6 +307,8 @@
 				9B2CAB6116D66C060087CA72 /* ipad-button-red@2x.png in Resources */,
 				9B2C549016D780700076C85A /* Background2.png in Resources */,
 				9B2C549216D797890076C85A /* Background2@2x.png in Resources */,
+				9BBE2CBB16DBAAD1002FC945 /* ipad-button-red-pressed.png in Resources */,
+				9BBE2CBC16DBAAD1002FC945 /* ipad-button-red-pressed@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

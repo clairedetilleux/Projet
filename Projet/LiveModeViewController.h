@@ -17,6 +17,11 @@
     UITextField *changeTitleField;
     UIView *changeTitleView;
     UIAlertView *changeTitleAlert;
+    
+    
+    // Server communication
+    NSMutableURLRequest *request;
+    NSURL *url;
 }
 
 
@@ -33,20 +38,15 @@
 
 - (IBAction)pisteButton:(UIButton*)sender;
 
-@property (weak, nonatomic) IBOutlet UIButton *pisteButton1;
-
-@property (weak, nonatomic) IBOutlet UIButton *pisteButton2;
-
 - (IBAction)moveButton:(UIPanGestureRecognizer *)recognizer;
 
 - (IBAction)changeTitle:(UILongPressGestureRecognizer *)recognizer;
 
-- (IBAction)lock:(UITapGestureRecognizer *)recognizer;
+//- (IBAction)lock:(UITapGestureRecognizer *)recognizer;
 @property (nonatomic, retain) UITextField *changerTitreField;
 
-@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *doubleTap;
-@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *doubleTap2;
+@property (strong, nonatomic) IBOutlet UILongPressGestureRecognizer *longPressButton1;
 
-
+- (IBAction)longPress:(UILongPressGestureRecognizer *)recognizer;
 
 @end

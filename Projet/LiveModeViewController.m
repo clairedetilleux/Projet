@@ -22,14 +22,11 @@
 
 @implementation LiveModeViewController
 @synthesize changerTitreField = changerTitreField;
+@synthesize longPressButton1;
 
-@synthesize doubleTap = _doubleTap;
-@synthesize doubleTap2 = _doubleTap2;
-
-@synthesize pisteButton1 = _pisteButton1;
-@synthesize pisteButton2 = _pisteButton2;
+/*@synthesize doubleTap = _doubleTap;
+@synthesize doubleTap2 = _doubleTap2;*/
 @synthesize stopwatchLabel;
-
 
 
 int playButtonClicked;
@@ -39,6 +36,7 @@ UIButton *changeTitleButton;
 bool isLocked = NO;
 int numberOfTap = 2;
 int count = 0;
+bool isLongClicked = NO;
 
 
 - (void)viewDidLoad
@@ -48,24 +46,24 @@ int count = 0;
      [[UIColor alloc]
       initWithPatternImage:[UIImage imageNamed:@"Background2.png"]]];
 
-    // doubleTap only recognize the last button attached
-    // Solution : for now drag a UITapGestureRecognizer per button
-    _doubleTap.numberOfTapsRequired = numberOfTap;          // Button 1
-    _doubleTap2.numberOfTapsRequired = numberOfTap;         // Button 16
+    // Server adress
+    /*url = [NSURL URLWithString:@"http://ip.du.serveur/blablabla?actionneur=boutonn&action=start"];
+     
+     request = [[NSMutableURLRequest alloc] initWithURL:url];*/
     
+    // Change value
+    //[request setHTTPMethod :@"POST"];
+    //[request setValue:<#(NSString *)#> forHTTPHeaderField:<#(NSString *)#>];
+   
     sequence = [[NSMutableArray alloc] init];
-
     [super viewDidLoad];
 }
 
 - (void)viewDidUnload
 {
     [self setStopwatchLabel:nil];
-    [self setPisteButton1:nil];
-    [self setPisteButton2:nil];
     [self setChangerTitreField:nil];
-    [self setDoubleTap:nil];
-    //[self setDoubleTap2:nil];
+    [self setLongPressButton1:nil];
     [super viewDidUnload];
 }
 
@@ -174,30 +172,63 @@ int count = 0;
 } 
 
 - (IBAction)changeTitle:(UILongPressGestureRecognizer *)recognizer{
-    NSLog(@"long press");
-
-    view = [recognizer view];
-    [(UIButton*)view currentTitle];
-
-    if (!popup) {
-        popup = YES;
-        changeTitleAlert = [[UIAlertView alloc] initWithTitle:@"Change Title"
-                                                      message:@"\n\n"
-                                                     delegate:self
-                                            cancelButtonTitle:@"Submit"
-                                            otherButtonTitles:nil];
+    
+    if (recognizer.state == UIGestureRecognizerStateEnded) {
         
-        changeTitleField = [[UITextField alloc] initWithFrame:CGRectMake(15, 35, 250, 30)];
-        changeTitleField.backgroundColor = [UIColor clearColor];
-        changeTitleField.textColor = [UIColor whiteColor];
-        changeTitleField.font = [UIFont systemFontOfSize:15];
-        changeTitleField.text = [(UIButton*)view currentTitle];
-        [changeTitleAlert addSubview:changeTitleField];
-        [changeTitleAlert show];
+        if(recognizer.numberOfTouches == 2){
+            
+            
+            NSLog(@"numberOfTouches : %d", recognizer.numberOfTouches);
+            view = [recognizer view];
+            [(UIButton*)view currentTitle];
+            
+            if (!popup) {
+                popup = YES;
+                changeTitleAlert = [[UIAlertView alloc] initWithTitle:@"Change Title"
+                                                              message:@"\n\n"
+                                                             delegate:self
+                                                    cancelButtonTitle:@"Submit"
+                                                    otherButtonTitles:nil];
+                
+                changeTitleField = [[UITextField alloc] initWithFrame:CGRectMake(15, 35, 250, 30)];
+                changeTitleField.backgroundColor = [UIColor clearColor];
+                changeTitleField.textColor = [UIColor whiteColor];
+                changeTitleField.font = [UIFont systemFontOfSize:15];
+                changeTitleField.text = [(UIButton*)view currentTitle];
+                [changeTitleAlert addSubview:changeTitleField];
+                [changeTitleAlert show];
+            }
+        } else if(recognizer.numberOfTouches == 1){
+            NSLog(@"double touch");
+            
+            if(!isLocked){
+                NSLog(@"lock");
+
+                UIImage* liveModeLockedButton = [[UIImage imageNamed:@"ipad-button-red.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
+                [(UIButton*)[recognizer view] setBackgroundImage:liveModeLockedButton forState:UIControlStateNormal];
+                isLocked = YES;
+                
+                // Send play request
+                
+            } else {
+                NSLog(@"not lock");
+
+                UIImage* liveModeButton = [[UIImage imageNamed:@"ipad-button-grey.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
+                [(UIButton*)[recognizer view] setBackgroundImage:liveModeButton forState:UIControlStateNormal];
+                
+                UIImage* liveModePressedButton = [[UIImage imageNamed:@"ipad-button-grey-pressed.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
+                [[UIButton appearance] setBackgroundImage:liveModePressedButton forState:UIControlStateHighlighted];
+                isLocked = NO;
+            }
+        }
     }
 } // changeTitle()
 
-- (IBAction)lock:(UITapGestureRecognizer *)recognizer {
+
+
+
+
+/*- (IBAction)lock:(UITapGestureRecognizer *)recognizer {
     NSLog(@"============ double tap ============");
     if(!isLocked){
         UIImage* liveModeLockedButton = [[UIImage imageNamed:@"ipad-button-red.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
@@ -212,7 +243,7 @@ int count = 0;
         [(UIButton*)[recognizer view] setBackgroundImage:liveModeButton forState:UIControlStateNormal];
         isLocked = NO;
     }
-}
+}*/
 
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex : (NSInteger)buttonIndex
@@ -225,4 +256,54 @@ int count = 0;
 
 
 
+- (IBAction)longPress:(UILongPressGestureRecognizer *)recognizer {
+
+    
+    /*if (recognizer.state == UIGestureRecognizerStateEnded) {
+        
+        if(recognizer.numberOfTouches == 1){
+            
+            
+            NSLog(@"numberOfTouches : %d", recognizer.numberOfTouches);
+            view = [recognizer view];
+            [(UIButton*)view currentTitle];
+            
+            if (!popup) {
+                popup = YES;
+                changeTitleAlert = [[UIAlertView alloc] initWithTitle:@"Change Title"
+                                                              message:@"\n\n"
+                                                             delegate:self
+                                                    cancelButtonTitle:@"Submit"
+                                                    otherButtonTitles:nil];
+                
+                changeTitleField = [[UITextField alloc] initWithFrame:CGRectMake(15, 35, 250, 30)];
+                changeTitleField.backgroundColor = [UIColor clearColor];
+                changeTitleField.textColor = [UIColor whiteColor];
+                changeTitleField.font = [UIFont systemFontOfSize:15];
+                changeTitleField.text = [(UIButton*)view currentTitle];
+                [changeTitleAlert addSubview:changeTitleField];
+                [changeTitleAlert show];
+            }
+        } else if(recognizer.numberOfTouches == 12){
+            NSLog(@"double touch");
+            
+            if(!isLocked){
+                UIImage* liveModeLockedButton = [[UIImage imageNamed:@"ipad-button-red.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
+                
+                [(UIButton*)[recognizer view] setBackgroundImage:liveModeLockedButton forState:UIControlStateNormal];
+                isLocked = YES;
+                
+                // Send play request
+                
+            } else {
+                UIImage* liveModeButton = [[UIImage imageNamed:@"ipad-button-grey.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
+                [(UIButton*)[recognizer view] setBackgroundImage:liveModeButton forState:UIControlStateNormal];
+                isLocked = NO;
+            }
+            
+            
+        }
+    }*/
+
+}
 @end

@@ -188,40 +188,22 @@
                                 <rect key="frame" x="16" y="93" width="984" height="625"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rye-Yi-sHJ">
-                                        <rect key="frame" x="20" y="89" width="184" height="61"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Te-Ip-Ycx">
+                                        <rect key="frame" x="20" y="20" width="184" height="61"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Bouton 6">
+                                        <state key="normal" title="Bouton 1">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="6Og-de-S1e"/>
-                                            <outletCollection property="gestureRecognizers" destination="Ml5-6X-YRY" appends="YES" id="oKD-OI-M5V"/>
-                                            <outletCollection property="gestureRecognizers" destination="Bey-qG-NKk" appends="YES" id="iKt-rD-BNJ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AMb-qe-zNB">
-                                        <rect key="frame" x="212" y="89" width="184" height="61"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Bouton 7">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="FNd-ls-P7Q"/>
-                                            <outletCollection property="gestureRecognizers" destination="JTK-Gu-OkU" appends="YES" id="i31-Lu-jdW"/>
-                                            <outletCollection property="gestureRecognizers" destination="QX0-w4-1do" appends="YES" id="QB7-fY-5LC"/>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="KLA-Qd-8L2"/>
+                                            <outletCollection property="gestureRecognizers" destination="O0R-AB-6Jc" appends="YES" id="O0B-QZ-ef8"/>
+                                            <outletCollection property="gestureRecognizers" destination="OO9-c7-0x6" appends="YES" id="xb7-Tc-K1K"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7sP-xr-wTR">
@@ -294,6 +276,42 @@
                                             <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="uj2-JB-28s"/>
                                             <outletCollection property="gestureRecognizers" destination="7fw-RI-6IX" appends="YES" id="2cv-jG-nPb"/>
                                             <outletCollection property="gestureRecognizers" destination="sfv-kX-GYo" appends="YES" id="kei-4n-Ef0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rye-Yi-sHJ">
+                                        <rect key="frame" x="20" y="89" width="184" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Bouton 6">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="6Og-de-S1e"/>
+                                            <outletCollection property="gestureRecognizers" destination="Ml5-6X-YRY" appends="YES" id="oKD-OI-M5V"/>
+                                            <outletCollection property="gestureRecognizers" destination="Bey-qG-NKk" appends="YES" id="iKt-rD-BNJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AMb-qe-zNB">
+                                        <rect key="frame" x="212" y="89" width="184" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Bouton 7">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="FNd-ls-P7Q"/>
+                                            <outletCollection property="gestureRecognizers" destination="JTK-Gu-OkU" appends="YES" id="i31-Lu-jdW"/>
+                                            <outletCollection property="gestureRecognizers" destination="QX0-w4-1do" appends="YES" id="QB7-fY-5LC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="N2r-n0-dwr">
@@ -456,7 +474,6 @@
                                             <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="ICI-5P-nVx"/>
                                             <outletCollection property="gestureRecognizers" destination="LCG-Gu-V4l" appends="YES" id="Xbk-Z2-Qf2"/>
                                             <outletCollection property="gestureRecognizers" destination="BLt-QM-qRG" appends="YES" id="VdT-Nl-edx"/>
-                                            <outletCollection property="gestureRecognizers" destination="rbL-sb-tZV" appends="YES" id="P3l-DT-T23"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cvZ-3F-RHZ">
@@ -531,25 +548,6 @@
                                             <outletCollection property="gestureRecognizers" destination="D1b-nO-pfG" appends="YES" id="IuK-vn-7df"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Te-Ip-Ycx">
-                                        <rect key="frame" x="20" y="20" width="184" height="61"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <gestureRecognizers/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="Bouton 1">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="pisteButton:" destination="SBR-IT-VX5" eventType="touchUpInside" id="KLA-Qd-8L2"/>
-                                            <outletCollection property="gestureRecognizers" destination="O0R-AB-6Jc" appends="YES" id="O0B-QZ-ef8"/>
-                                            <outletCollection property="gestureRecognizers" destination="UYG-QY-Nac" appends="YES" id="whC-D2-8dv"/>
-                                            <outletCollection property="gestureRecognizers" destination="7P1-UO-eCX" appends="YES" id="tyL-O7-A3D"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </scrollView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6dH-cD-uzW">
@@ -596,46 +594,17 @@
                     <navigationItem key="navigationItem" id="IuR-Em-RTA"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="doubleTap" destination="7P1-UO-eCX" id="Y2v-oV-fVP"/>
-                        <outlet property="doubleTap2" destination="rbL-sb-tZV" id="Mpi-Cf-gEZ"/>
-                        <outlet property="pisteButton1" destination="7Te-Ip-Ycx" id="66t-9y-feH"/>
-                        <outlet property="pisteButton2" destination="7sP-xr-wTR" id="7JS-E2-Ti9"/>
                         <outlet property="stopwatchLabel" destination="6dH-cD-uzW" id="C6r-hM-Vn8"/>
                     </connections>
                 </viewController>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Q5h-dM-2Re">
-                    <connections>
-                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="WXy-bi-fu7"/>
-                    </connections>
-                </pongPressGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="O0R-AB-6Jc">
                     <connections>
                         <action selector="moveButton:" destination="SBR-IT-VX5" id="l7O-YQ-Wlh"/>
                     </connections>
                 </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="Ml5-6X-YRY">
-                    <connections>
-                        <action selector="moveButton:" destination="SBR-IT-VX5" id="lQq-ek-GYG"/>
-                    </connections>
-                </panGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="UYG-QY-Nac">
-                    <connections>
-                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="PaN-f0-u8V"/>
-                    </connections>
-                </pongPressGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="MSS-1a-bef">
-                    <connections>
-                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="pIt-dF-djY"/>
-                    </connections>
-                </pongPressGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="KHi-NC-Qy3">
                     <connections>
                         <action selector="moveButton:" destination="SBR-IT-VX5" id="AZE-Qa-xpV"/>
-                    </connections>
-                </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="JTK-Gu-OkU">
-                    <connections>
-                        <action selector="moveButton:" destination="SBR-IT-VX5" id="knX-vH-IMH"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="vJC-zQ-fh4">
@@ -643,24 +612,34 @@
                         <action selector="moveButton:" destination="SBR-IT-VX5" id="JcI-YL-gTd"/>
                     </connections>
                 </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="DAi-ic-qOE">
-                    <connections>
-                        <action selector="moveButton:" destination="SBR-IT-VX5" id="gkb-1b-MIC"/>
-                    </connections>
-                </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="Hzj-qK-3ly">
                     <connections>
                         <action selector="moveButton:" destination="SBR-IT-VX5" id="vvA-of-BKR"/>
                     </connections>
                 </panGestureRecognizer>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="VAw-s3-4zO">
-                    <connections>
-                        <action selector="moveButton:" destination="SBR-IT-VX5" id="BjP-xd-ol8"/>
-                    </connections>
-                </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="7fw-RI-6IX">
                     <connections>
                         <action selector="moveButton:" destination="SBR-IT-VX5" id="vtN-Eq-N9t"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Ml5-6X-YRY">
+                    <connections>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="lQq-ek-GYG"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="JTK-Gu-OkU">
+                    <connections>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="knX-vH-IMH"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="DAi-ic-qOE">
+                    <connections>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="gkb-1b-MIC"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="VAw-s3-4zO">
+                    <connections>
+                        <action selector="moveButton:" destination="SBR-IT-VX5" id="BjP-xd-ol8"/>
                     </connections>
                 </panGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="nRP-kd-ocq">
@@ -718,9 +697,20 @@
                         <action selector="moveButton:" destination="SBR-IT-VX5" id="Q7j-Ta-UKr"/>
                     </connections>
                 </panGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="OO9-c7-0x6">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="Y9S-sd-RCB"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="DSK-Nv-LgX"/>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="SKc-SY-LLC">
                     <connections>
                         <action selector="changeTitle:" destination="SBR-IT-VX5" id="FSN-UR-cgk"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="MSS-1a-bef">
+                    <connections>
+                        <action selector="changeTitle:" destination="SBR-IT-VX5" id="pIt-dF-djY"/>
                     </connections>
                 </pongPressGestureRecognizer>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="UCL-QC-s6T">
@@ -808,16 +798,6 @@
                         <action selector="changeTitle:" destination="SBR-IT-VX5" id="jjw-9D-epf"/>
                     </connections>
                 </pongPressGestureRecognizer>
-                <tapGestureRecognizer id="7P1-UO-eCX">
-                    <connections>
-                        <action selector="lock:" destination="SBR-IT-VX5" id="Are-DL-Wh3"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="rbL-sb-tZV">
-                    <connections>
-                        <action selector="lock:" destination="SBR-IT-VX5" id="4ww-Jt-5oq"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2141" y="48"/>
         </scene>
@@ -861,16 +841,13 @@
             <relationships>
                 <relationship kind="action" name="changeTitle:" candidateClass="UILongPressGestureRecognizer"/>
                 <relationship kind="action" name="ffButton:"/>
-                <relationship kind="action" name="lock:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="longPress:" candidateClass="UILongPressGestureRecognizer"/>
                 <relationship kind="action" name="moveButton:" candidateClass="UIPanGestureRecognizer"/>
                 <relationship kind="action" name="pauseButton:"/>
                 <relationship kind="action" name="pisteButton:" candidateClass="UIButton"/>
                 <relationship kind="action" name="playButton:"/>
                 <relationship kind="action" name="rewButton:"/>
-                <relationship kind="outlet" name="doubleTap" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="outlet" name="doubleTap2" candidateClass="UITapGestureRecognizer"/>
-                <relationship kind="outlet" name="pisteButton1" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="pisteButton2" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="longPressButton1" candidateClass="UILongPressGestureRecognizer"/>
                 <relationship kind="outlet" name="stopwatchLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
