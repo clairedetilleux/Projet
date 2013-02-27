@@ -42,7 +42,6 @@
 
 - (IBAction)changeTitle:(UILongPressGestureRecognizer *)recognizer;
 
-//- (IBAction)lock:(UITapGestureRecognizer *)recognizer;
 @property (nonatomic, retain) UITextField *changerTitreField;
 
 @property (strong, nonatomic) IBOutlet UILongPressGestureRecognizer *longPressButton1;

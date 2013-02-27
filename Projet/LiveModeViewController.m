@@ -117,8 +117,8 @@ bool isLongClicked = NO;
     playButtonClicked = 0;
     NSLog(@"sequence: %@", sequence);
     
-    // Stores the value of the array at index n (caution : the indexes strart at 0)
-    NSLog(@"tab : %@", [sequence objectAtIndex:0]);
+    // Stores the value of the array at index n (caution : the indexes start at 0)
+    //NSLog(@"tab : %@", [sequence objectAtIndex:0]);
     
     
     [self.stopWatchTimer invalidate];
@@ -151,11 +151,9 @@ bool isLongClicked = NO;
         // This array (1x2) stores this event 
         NSArray * singleEventArray = [[NSArray alloc] init];
         singleEventArray = [NSArray arrayWithObjects: clickTime, sender.currentTitle, nil];
-        //NSLog(@"singleEventArray: %@", singleEventArray);
         count++;
-        NSLog(@"count : %d", count-1);
         [sequence insertObject:singleEventArray atIndex:count-1];
-        //NSLog(@"sequence: %@", sequence);
+        NSLog(@"sequence: %@", sequence);
         
     }
 } // pisteButton()
@@ -175,9 +173,7 @@ bool isLongClicked = NO;
     
     if (recognizer.state == UIGestureRecognizerStateEnded) {
         
-        if(recognizer.numberOfTouches == 2){
-            
-            
+        if(recognizer.numberOfTouches == 1){
             NSLog(@"numberOfTouches : %d", recognizer.numberOfTouches);
             view = [recognizer view];
             [(UIButton*)view currentTitle];
@@ -198,9 +194,7 @@ bool isLongClicked = NO;
                 [changeTitleAlert addSubview:changeTitleField];
                 [changeTitleAlert show];
             }
-        } else if(recognizer.numberOfTouches == 1){
-            NSLog(@"double touch");
-            
+        } else if(recognizer.numberOfTouches == 2){            
             if(!isLocked){
                 NSLog(@"lock");
 
@@ -227,25 +221,6 @@ bool isLongClicked = NO;
 
 
 
-
-/*- (IBAction)lock:(UITapGestureRecognizer *)recognizer {
-    NSLog(@"============ double tap ============");
-    if(!isLocked){
-        UIImage* liveModeLockedButton = [[UIImage imageNamed:@"ipad-button-red.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
-
-        [(UIButton*)[recognizer view] setBackgroundImage:liveModeLockedButton forState:UIControlStateNormal];
-        isLocked = YES;
-        
-        // Send play request
-        
-    } else {
-        UIImage* liveModeButton = [[UIImage imageNamed:@"ipad-button-grey.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(14, 14, 14, 14)];
-        [(UIButton*)[recognizer view] setBackgroundImage:liveModeButton forState:UIControlStateNormal];
-        isLocked = NO;
-    }
-}*/
-
-
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex : (NSInteger)buttonIndex
 {
     [(UIButton*)view setTitle:changeTitleField.text forState:UIControlStateNormal];
@@ -259,7 +234,7 @@ bool isLongClicked = NO;
 - (IBAction)longPress:(UILongPressGestureRecognizer *)recognizer {
 
     
-    /*if (recognizer.state == UIGestureRecognizerStateEnded) {
+    if (recognizer.state == UIGestureRecognizerStateEnded) {
         
         if(recognizer.numberOfTouches == 1){
             
@@ -303,7 +278,7 @@ bool isLongClicked = NO;
             
             
         }
-    }*/
+    }
 
 }
 @end
